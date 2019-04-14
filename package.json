@@ -1,0 +1,43 @@
+{
+  "name": "react-chameleon-status-bar",
+  "version": "0.0.1",
+  "description": "Chameleon",
+  "main": "dist/react-chameleon-status-bar.min.js",
+  "files": [
+    "dist",
+    "License.txt",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c -o dist/react-chameleon-status-bar.min.js",
+    "test": "echo \"No tests \" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woofers/react-chameleon-status-bar.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "component"
+  ],
+  "author": "Jaxson Van Doorn <jaxson.vandoorn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/woofers/react-chameleon-status-bar/issues"
+  },
+  "homepage": "https://github.com/woofers/react-chameleon-status-bar#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "rollup": "^1.8.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-uglify": "^6.0.2"
+  },
+  "dependencies": {
+    "react": "^16.8.6"
+  }
+}
