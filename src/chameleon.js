@@ -25,13 +25,17 @@ const Chameleon = () => {
     const newColor = trim(getProperty(cur, key))
     setColor(newColor ? newColor : defaultColor)
   })
-    return (
-      <div ref={container}>
-        <Helmet
-          meta={[{ name: 'theme-color', content: color }]}>
-        </Helmet>
-      </div>
-    )
+  const meta = (name) => ({ name, content: color })
+  return (
+    <div ref={container}>
+      <Helmet
+        meta={[
+          meta('theme-color'),
+          meta('msapplication-navbutton-color'),
+        ]}>
+      </Helmet>
+    </div>
+  )
 }
 
 export default Chameleon
