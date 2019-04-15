@@ -4,13 +4,18 @@ import Helmet from 'react-helmet'
 const Chameleon = () => {
   const defaultColor = '#fff'
   const key = 'background'
+  const keyAlt = 'backgroundColor'
   const [color, setColor] = useState(defaultColor)
   const container = useRef()
   useEffect(() =>{
     const getComputedStyle = (element) => window ? (element.parentNode ? window.getComputedStyle(element) : false) : false
     const getProperty = (element, property) =>  {
       const styles = getComputedStyle(element)
-      return styles ? styles.getPropertyValue(property) : false
+      if (styles) {
+        const value = styles.getPropertyValue(property)
+        return value ? value : styles[keyAlt]
+      }
+      return false
     }
     const trim = (value) => {
       // Regex to match HTML colors
