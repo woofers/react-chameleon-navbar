@@ -9,6 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "emotion-server": "^10.0.7",
     "react": "^16.8.3",
+    "react-chameleon-status-bar": "../",
     "react-dom": "^16.8.3",
     "react-emotion": "^10.0.0",
     "react-scripts": "^2.1.8"
