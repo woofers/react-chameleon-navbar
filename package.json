@@ -1,6 +1,6 @@
 {
   "name": "react-chameleon-status-bar",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Chameleon",
   "main": "dist/react-chameleon-status-bar.min.js",
   "files": [
