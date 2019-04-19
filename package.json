@@ -1,8 +1,8 @@
 {
-  "name": "react-chameleon-status-bar",
+  "name": "react-chameleon-theme-color",
   "version": "0.1.0",
-  "description": "Chameleon",
-  "main": "dist/react-chameleon-status-bar.min.js",
+  "description": "Style mobile browser's menu bars to match the current in-scope CSS color",
+  "main": "dist/react-chameleon-theme-color.min.js",
   "files": [
     "dist",
     "License.txt",
@@ -27,9 +27,9 @@
   "author": "Jaxson Van Doorn <jaxson.vandoorn@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/woofers/react-chameleon-status-bar/issues"
+    "url": "https://github.com/woofers/react-chameleon-theme-color/issues"
   },
-  "homepage": "https://github.com/woofers/react-chameleon-status-bar#readme",
+  "homepage": "https://github.com/woofers/react-chameleon-theme-color#readme",
   "peerDependencies": {
     "react": "^0.13.0 || ^0.14.0 || ^15.0.0 || ^16.0.0"
   },

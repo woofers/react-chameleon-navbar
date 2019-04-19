@@ -1,10 +1,9 @@
 import React from 'react'
-import Chameleon from 'react-chameleon-status-bar'
-
+import Chameleon from 'react-chameleon-theme-color'
 
 const App = () => {
   return (
-    <div>
+    <div style={{ background: '#123'}}>
       <Chameleon />
     </div>
   )
