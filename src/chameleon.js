@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 
 const Chameleon = () => {
   const defaultColor = '#fff'
+  const empty = 'rgba(0, 0, 0, 0)'
   const key = 'background'
   const keyAlt = 'backgroundColor'
   const [color, setColor] = useState(defaultColor)
@@ -24,7 +25,7 @@ const Chameleon = () => {
       return value.match(/(.*?)(rgb|rgba)\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)/i)[0]
     }
     let cur = container.current
-    while (cur && trim(getBackground(cur)) === 'rgba(0, 0, 0, 0)') {
+    while (cur && trim(getBackground(cur)) === empty) {
       cur = cur.parentNode
     }
     const newColor = trim(getBackground(cur))
