@@ -1,6 +1,10 @@
 import { uglify } from 'rollup-plugin-uglify'
 import babel from 'rollup-plugin-babel'
-const dependencies = Object.keys(require('./package.json').dependencies)
+const json = require('./package.json')
+const dependencies = [
+  ...Object.keys(json.dependencies),
+  ...Object.keys(json.peerDependencies)
+]
 
 const config = {
     plugins: [
