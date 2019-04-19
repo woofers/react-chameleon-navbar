@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Helmet from 'react-helmet'
+import { contrast } from 'chroma-js'
 
 const Chameleon = () => {
   const empty = 'rgba(0, 0, 0, 0)'
@@ -31,7 +32,9 @@ const Chameleon = () => {
     const newColor = divColor()
     setColor(newColor)
   })
-  const meta = (name) => ({ name, content: color })
+  const format = (name, content) => ({ name, content })
+  const meta = (name) => format(name, color)
+  const apple = () => contrast('#FFF', color) > 1.6 ? 'black-translucent' : 'default'
   return (
     <div ref={container}>
       {color ?
@@ -39,6 +42,7 @@ const Chameleon = () => {
           meta={[
             meta('theme-color'),
             meta('msapplication-navbutton-color'),
+            format('apple-mobile-web-app-status-bar-style', apple()),
           ]}>
         </Helmet>
       : null}

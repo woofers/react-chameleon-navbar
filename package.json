@@ -34,16 +34,17 @@
     "react": "^0.13.0 || ^0.14.0 || ^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
-    "react": "^16.8.6",
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
+    "react": "^16.8.6",
     "rollup": "^1.8.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-uglify": "^6.0.2"
   },
   "dependencies": {
+    "chroma-js": "^2.0.3",
     "react-helmet": "^5.2.0"
   }
 }
