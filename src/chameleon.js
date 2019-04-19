@@ -18,15 +18,15 @@ const Chameleon = () => {
       }
       return false
     }
-    const trim = (value) => {
+    const toColor = (value) => {
       // Regex to match RGB and RGBA colors
       // https://stackoverflow.com/a/27622101/9129020
       if (!value) return false
       return value.match(/(.*?)(rgb|rgba)\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)/i)[0]
     }
     let cur = container.current
-    const divColor = () => trim(getBackground(cur))
-    while (cur &&  divColor() === empty) {
+    const divColor = () => toColor(getBackground(cur))
+    while (cur && divColor() === empty) {
       cur = cur.parentNode
     }
     const newColor = divColor()
