@@ -7,18 +7,18 @@ const dependencies = [
 ]
 
 const config = {
-    plugins: [
-      babel({
-        exclude: "node_modules/**"
-      }),
-      uglify()
-    ],
-    input: 'src/chameleon.js',
-    external: dependencies,
-    output: {
-      format: 'cjs',
-      file: json.main,
-      name: json.name
-    }
+  plugins: [
+    babel({
+      exclude: "node_modules/**"
+    }),
+    uglify()
+  ],
+  input: 'src/chameleon.js',
+  external: dependencies,
+  output: {
+    format: 'cjs',
+    file: json.main,
+    name: json.name
+  }
 }
 export default config
