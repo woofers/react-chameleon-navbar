@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-chameleon-theme-color/precache-manifest.e7d3d1518494f9622d629ebea7329101.js"
+  "/react-chameleon-theme-color/precache-manifest.093745f42d0951b5bda5f4fcc8b83993.js"
 );
 
 workbox.clientsClaim();
