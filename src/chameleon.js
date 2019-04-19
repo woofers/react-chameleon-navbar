@@ -9,10 +9,10 @@ const Chameleon = () => {
   const container = useRef()
   useEffect(() =>{
     const getComputedStyle = (element) => window ? (element.parentNode ? window.getComputedStyle(element) : false) : false
-    const getProperty = (element, property) =>  {
+    const getBackground = (element) =>  {
       const styles = getComputedStyle(element)
       if (styles) {
-        const value = styles.getPropertyValue(property)
+        const value = styles.getPropertyValue(key)
         return value ? value : styles[keyAlt]
       }
       return false
@@ -24,10 +24,10 @@ const Chameleon = () => {
       return value.match(/(.*?)(rgb|rgba)\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)/i)[0]
     }
     let cur = container.current
-    while (cur && trim(getProperty(cur, key)) === 'rgba(0, 0, 0, 0)') {
+    while (cur && trim(getBackground(cur)) === 'rgba(0, 0, 0, 0)') {
       cur = cur.parentNode
     }
-    const newColor = trim(getProperty(cur, key))
+    const newColor = trim(getBackground(cur))
     setColor(newColor ? newColor : defaultColor)
   })
   const meta = (name) => ({ name, content: color })
