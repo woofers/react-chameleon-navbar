@@ -2,11 +2,10 @@ import React, { useState, useEffect, useRef } from 'react'
 import Helmet from 'react-helmet'
 
 const Chameleon = () => {
-  const defaultColor = '#fff'
   const empty = 'rgba(0, 0, 0, 0)'
   const key = 'background'
   const keyAlt = 'backgroundColor'
-  const [color, setColor] = useState(defaultColor)
+  const [color, setColor] = useState(false)
   const container = useRef()
   useEffect(() =>{
     const getComputedStyle = (element) => window ? (element.parentNode ? window.getComputedStyle(element) : false) : false
@@ -30,17 +29,19 @@ const Chameleon = () => {
       cur = cur.parentNode
     }
     const newColor = divColor()
-    setColor(newColor ? newColor : defaultColor)
+    setColor(newColor)
   })
   const meta = (name) => ({ name, content: color })
   return (
     <div ref={container}>
-      <Helmet
-        meta={[
-          meta('theme-color'),
-          meta('msapplication-navbutton-color'),
-        ]}>
-      </Helmet>
+      {color ?
+        <Helmet
+          meta={[
+            meta('theme-color'),
+            meta('msapplication-navbutton-color'),
+          ]}>
+        </Helmet>
+      : null}
     </div>
   )
 }
