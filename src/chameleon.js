@@ -25,10 +25,11 @@ const Chameleon = () => {
       return value.match(/(.*?)(rgb|rgba)\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)/i)[0]
     }
     let cur = container.current
-    while (cur && trim(getBackground(cur)) === empty) {
+    const divColor = () => trim(getBackground(cur))
+    while (cur &&  divColor() === empty) {
       cur = cur.parentNode
     }
-    const newColor = trim(getBackground(cur))
+    const newColor = divColor()
     setColor(newColor ? newColor : defaultColor)
   })
   const meta = (name) => ({ name, content: color })
