@@ -10,7 +10,9 @@
     "README.md"
   ],
   "scripts": {
-    "build": "rollup -c -o dist/react-chameleon-status-bar.min.js",
+    "start": "yarn watch",
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
     "test": "echo \"No tests \" && exit 0"
   },
   "repository": {
