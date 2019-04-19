@@ -4,9 +4,10 @@ import { useState } from 'react'
 import Chameleon from 'react-chameleon-theme-color'
 import Helmet from 'react-helmet'
 import useInterval from '@use-it/interval'
+import { random } from 'chroma-js'
 
 const App = () => {
-  const randColor = () => "#xxxxxx".replace(/x/g, y => (Math.random() * 16 | 0).toString(16))
+  const randColor = () => random().toString()
   const [color, setColor] = useState(false)
   const [background, setBackground] = useState(false)
   useInterval(() => {
