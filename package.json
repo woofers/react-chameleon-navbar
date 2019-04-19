@@ -30,7 +30,11 @@
     "url": "https://github.com/woofers/react-chameleon-status-bar/issues"
   },
   "homepage": "https://github.com/woofers/react-chameleon-status-bar#readme",
+  "peerDependencies": {
+    "react": "^0.13.0 || ^0.14.0 || ^15.0.0 || ^16.0.0"
+  },
   "devDependencies": {
+    "react": "^16.8.6",
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/preset-env": "^7.4.3",
@@ -40,7 +44,6 @@
     "rollup-plugin-uglify": "^6.0.2"
   },
   "dependencies": {
-    "react": "^16.8.6",
     "react-helmet": "^5.2.0"
   }
 }
