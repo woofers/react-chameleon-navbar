@@ -17,8 +17,8 @@ const config = {
     external: dependencies,
     output: {
       format: 'cjs',
-      file: 'dist/react-chameleon-status-bar.min.js',
-      name: 'react-chameleon-status-bar'
+      file: json.main,
+      name: json.name
     }
 }
 export default config
