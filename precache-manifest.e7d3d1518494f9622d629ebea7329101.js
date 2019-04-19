@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "e36d140ef4cdc2289d20",
-    "url": "/react-chameleon-theme-color/static/js/main.c6d27120.chunk.js"
+    "revision": "170963f7a617b62d2ebf",
+    "url": "/react-chameleon-theme-color/static/js/main.ebfbf91f.chunk.js"
   },
   {
     "revision": "469b142d7033223932be",
@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/react-chameleon-theme-color/static/js/2.0db91f10.chunk.js"
   },
   {
-    "revision": "b6c2ad0d107243f0e0aba6e019c48b99",
+    "revision": "346bb22c0b4ad1630f5709fd3f3b3401",
     "url": "/react-chameleon-theme-color/index.html"
   }
 ];
