@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import Helmet from 'react-helmet'
 import { contrast } from 'chroma-js'
 
-const ThemeColor = ({ color, contrastRatio }) => {
+export const ThemeColor = ({ color, contrastRatio }) => {
   const format = (name, content) => ({ name, content })
   const meta = (name) => format(name, color)
   const apple = () => contrast('#FFF', color) > contrastRatio ? 'black-translucent' : 'default'
@@ -26,7 +26,7 @@ ThemeColor.defaultProps = {
   contrastRatio: 1.6
 }
 
-const Chameleon = () => {
+export const ChameleonThemeColor = ({ contrastRatio }) => {
   const empty = 'rgba(0, 0, 0, 0)'
   const key = 'background'
   const keyAlt = 'backgroundColor'
@@ -58,9 +58,7 @@ const Chameleon = () => {
   })
   return (
     <div ref={container}>
-      <ThemeColor color={color} />
+      <ThemeColor color={color} contrastRatio={contrastRatio} />
     </div>
   )
 }
-
-export default Chameleon

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 import { useState } from 'react'
-import Chameleon from 'react-chameleon-theme-color'
+import { ChameleonThemeColor as Chameleon } from 'react-chameleon-theme-color'
 import Helmet from 'react-helmet'
 import useInterval from '@use-it/interval'
 import { random } from 'chroma-js'
