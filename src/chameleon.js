@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react'
 import Helmet from 'react-helmet'
 import { contrast } from 'chroma-js'
 
-const ThemeColor = ({ color }) => {
+const ThemeColor = ({ color, contrastRatio }) => {
   const format = (name, content) => ({ name, content })
   const meta = (name) => format(name, color)
-  const apple = () => contrast('#FFF', color) > 1.6 ? 'black-translucent' : 'default'
+  const apple = () => contrast('#FFF', color) > contrastRatio ? 'black-translucent' : 'default'
   return (
     <div>
       {color ?
@@ -23,6 +23,7 @@ const ThemeColor = ({ color }) => {
 
 ThemeColor.defaultProps = {
   color: false,
+  contrastRatio: 1.6
 }
 
 const Chameleon = () => {
