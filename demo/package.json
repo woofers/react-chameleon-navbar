@@ -11,7 +11,7 @@
     "chroma-js": "^2.0.3",
     "emotion-server": "^10.0.7",
     "react": "^16.8.3",
-    "react-chameleon-theme-color": "^0.1.0",
+    "react-chameleon-theme-color": "../",
     "react-dom": "^16.8.3",
     "react-emotion": "^10.0.0",
     "react-helmet": "^5.2.0",
