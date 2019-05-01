@@ -14,6 +14,7 @@ export const ThemeColor = ({ color, contrastRatio }) => {
             meta('theme-color'),
             meta('msapplication-navbutton-color'),
             format('apple-mobile-web-app-status-bar-style', apple()),
+            format('apple-mobile-web-app-capable', 'yes'),
           ]}>
         </Helmet>
       : null}
