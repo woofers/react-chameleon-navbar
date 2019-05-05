@@ -61,7 +61,6 @@ Sets the `msapplication-navbutton-color` to the target color.
 
 ```js
 import React, { Component } from "react"
-import Wave from 'react-wavify'
 import { ThemeColor, ChameleonThemeColor } from 'react-chameleon-theme-color'
 
 class Application extends Component {
