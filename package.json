@@ -11,8 +11,8 @@
   ],
   "scripts": {
     "start": "yarn watch",
-    "build": "rollup -c",
-    "watch": "rollup -c --watch",
+    "build": "NODE_ENV=production rollup -c",
+    "watch": "NODE_ENV=development rollup -c --watch",
     "test": "echo \"No tests \" && exit 0"
   },
   "repository": {
@@ -39,11 +39,11 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "rollup": "^1.10.1",
-    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-uglify": "^6.0.2"
   },
   "dependencies": {
-    "chroma-js": "^2.0.3",
+    "chroma-js": "^2.0.4",
     "react-helmet": "^5.2.1"
   }
 }
