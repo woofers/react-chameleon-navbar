@@ -1,11 +1,13 @@
 {
-  "main.js": "/react-chameleon-theme-color/static/js/main.13605916.chunk.js",
-  "main.js.map": "/react-chameleon-theme-color/static/js/main.13605916.chunk.js.map",
-  "runtime~main.js": "/react-chameleon-theme-color/static/js/runtime~main.9807ad77.js",
-  "runtime~main.js.map": "/react-chameleon-theme-color/static/js/runtime~main.9807ad77.js.map",
-  "static/js/2.e802f529.chunk.js": "/react-chameleon-theme-color/static/js/2.e802f529.chunk.js",
-  "static/js/2.e802f529.chunk.js.map": "/react-chameleon-theme-color/static/js/2.e802f529.chunk.js.map",
-  "index.html": "/react-chameleon-theme-color/index.html",
-  "precache-manifest.90b0f31781d258eeb9462114b308f0a6.js": "/react-chameleon-theme-color/precache-manifest.90b0f31781d258eeb9462114b308f0a6.js",
-  "service-worker.js": "/react-chameleon-theme-color/service-worker.js"
+  "files": {
+    "main.js": "/react-chameleon-theme-color/static/js/main.78685950.chunk.js",
+    "main.js.map": "/react-chameleon-theme-color/static/js/main.78685950.chunk.js.map",
+    "runtime~main.js": "/react-chameleon-theme-color/static/js/runtime~main.9807ad77.js",
+    "runtime~main.js.map": "/react-chameleon-theme-color/static/js/runtime~main.9807ad77.js.map",
+    "static/js/2.27c52930.chunk.js": "/react-chameleon-theme-color/static/js/2.27c52930.chunk.js",
+    "static/js/2.27c52930.chunk.js.map": "/react-chameleon-theme-color/static/js/2.27c52930.chunk.js.map",
+    "index.html": "/react-chameleon-theme-color/index.html",
+    "precache-manifest.143012f4abe421badeae7f83e889de02.js": "/react-chameleon-theme-color/precache-manifest.143012f4abe421badeae7f83e889de02.js",
+    "service-worker.js": "/react-chameleon-theme-color/service-worker.js"
+  }
 }
