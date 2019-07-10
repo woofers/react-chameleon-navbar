@@ -11,8 +11,6 @@ A simple React component to set the theme color of mobile browsers menu bars.
 
 The effect of this component varies by device and by browser.  See demo on a mobile device.
 
-**WARNING:** This site may potentially trigger seizures for people with photosensitive epilepsy as it contains rapidly changing colors.
-
 **[Live Demo](https://jaxson.vandoorn.ca/react-chameleon-theme-color/)**
 
 
@@ -36,8 +34,6 @@ the value will be set to `black-translucent` which is a transparent status bar w
 Otherwise, the status bar will be set to `default`
 which is a grey status bar with black text.
 
-This is done to ensure that white text is not used over a bright color, which could lead to text which is difficult to read.
-
 Additionally, [apple-mobile-web-app-capable](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html#//apple_ref/doc/uid/TP40008193-SW3) is also set which hides the address-bar.
 
 
@@ -59,21 +55,17 @@ Sets the `msapplication-navbutton-color` to the target color.
 
 # Usage
 
-```js
-import React, { Component } from "react"
+```jsx
+import React from 'react'
 import { ThemeColor, ChameleonThemeColor } from 'react-chameleon-theme-color'
 
-class Application extends Component {
-  render () {
-    return (
-      <div style={{ background: "#123", padding: "200px" }}>
-        <ChameleonThemeColor contrastRatio={1.6} />
-        {/* or you can set the color manually */}
-        <ThemeColor color="#123" contrastRatio={1.6} />
-      </div>
-    )
-  }
-}
+const App = () => (
+  <div style={{ background: "#123", padding: "200px" }}>
+    <ChameleonThemeColor contrastRatio={1.6} />
+    {/* or you can set the color manually */}
+    <ThemeColor color="#123" contrastRatio={1.6} />
+  </div>
+)
 ```
 
 Simply add either the `ThemeColor` or `ChameleonThemeColor` component to the React application using JSX.

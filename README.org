@@ -14,8 +14,6 @@ A simple React component to set the theme color of mobile browsers menu bars.
 
 The effect of this component varies by device and by browser.  See demo on a mobile device.
 
-*WARNING:* This site may potentially trigger seizures for people with photosensitive epilepsy as it contains rapidly changing colors.
-
 *[[https://jaxson.vandoorn.ca/react-chameleon-theme-color/][Live Demo]]*
 
 ** Android
@@ -57,20 +55,16 @@ npm install react-chameleon-theme-color
 * Usage
 
 #+BEGIN_SRC js
-import React, { Component } from "react"
+import React from 'react'
 import { ThemeColor, ChameleonThemeColor } from 'react-chameleon-theme-color'
 
-class Application extends Component {
-  render () {
-    return (
-      <div style={{ background: "#123", padding: "200px" }}>
-        <ChameleonThemeColor contrastRatio={1.6} />
-        {/* or you can set the color manually */}
-        <ThemeColor color="#123" contrastRatio={1.6} />
-      </div>
-    )
-  }
-}
+const App = () => (
+  <div style={{ background: "#123", padding: "200px" }}>
+    <ChameleonThemeColor contrastRatio={1.6} />
+    {/* or you can set the color manually */}
+    <ThemeColor color="#123" contrastRatio={1.6} />
+  </div>
+)
 #+END_SRC
 
 Simply add either the ~ThemeColor~ or ~ChameleonThemeColor~ component to the React application using JSX.
