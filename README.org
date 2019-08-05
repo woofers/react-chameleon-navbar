@@ -16,6 +16,10 @@ The effect of this component varies by device and by browser.  See demo on a mob
 
 *[[https://jaxson.vandoorn.ca/react-chameleon-theme-color/][Live Demo]]*
 
+#+CAPTION: Android Chrome
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+[[./screenshots/chrome.png]]
+
 ** Android
 
 The [[https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android][theme-color]] meta attribute is set to the target color.

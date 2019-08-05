@@ -13,6 +13,8 @@ The effect of this component varies by device and by browser.  See demo on a mob
 
 **[Live Demo](https://jaxson.vandoorn.ca/react-chameleon-theme-color/)**
 
+![img](./screenshots/chrome.png "Android Chrome")
+
 
 ## Android
 
