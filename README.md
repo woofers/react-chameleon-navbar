@@ -2,7 +2,7 @@
 
 # React Chameleon Theme Color
 
-[![img](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/woofers/react-chameleon-theme-color)](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/results/woofers/react-chameleon-theme-color) [![img](https://david-dm.org/woofers/react-chameleon-theme-color.svg)](https://www.npmjs.com/package/react-chameleon-theme-color) [![img](https://badge.fury.io/js/react-chameleon-theme-color.svg)](https://www.npmjs.com/package/react-chameleon-theme-color) [![img](https://img.shields.io/npm/dt/react-chameleon-theme-color.svg)](https://www.npmjs.com/package/react-chameleon-theme-color) [![img](https://img.shields.io/npm/l/react-chameleon-theme-color.svg)](https://github.com/woofers/react-chameleon-theme-color/blob/master/License.txt)
+[![img](https://github.com/woofers/react-chameleon/workflows/build/badge.svg)](https://github.com/woofers/react-chameleon/actions) [![img](https://david-dm.org/woofers/react-chameleon-theme-color.svg)](https://www.npmjs.com/package/react-chameleon-theme-color) [![img](https://badge.fury.io/js/react-chameleon-theme-color.svg)](https://www.npmjs.com/package/react-chameleon-theme-color) [![img](https://img.shields.io/npm/dt/react-chameleon-theme-color.svg)](https://www.npmjs.com/package/react-chameleon-theme-color) [![img](https://img.shields.io/npm/l/react-chameleon-theme-color.svg)](https://github.com/woofers/react-chameleon-theme-color/blob/master/License.txt)
 
 A simple React component to set the theme color of mobile browsers menu bars.
 
